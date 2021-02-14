@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="viewport" content="width=device-width">
+  <meta name="keywords"
+    content="Freelancer, Freelancer software development, angular application development, angular freelancer, angular developer, reactJs application development, reactJs freelancer, reactJs developer, android freelancer, android development,  android developer, ios development, ios freelancer, ios developer, mobile app developer, mobile app freelancer, mobile application development, mobile web development, hybrid mobile apps, hybrid mobile developer, hybrid mobile apps freelancer" />
+  <meta name="description"
+    content="We are highly experienced software developers expertise in wide range of
+    technologies driven by experts handling medium to enterprise applications.
+    We provide high quality, time bound, cost effective freelancing in application development" />
+
+  <title>APPSEZ - Freelancing mobile and web development</title>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+  <style>
+    .section-bubble,
+    .section-bubble_type-b,
+    .section-bubble_type-a,
+    .section-bubble4,
+    .section-bubble3,
+    .section-bubble2,
+    .section-bubble1 {
+      margin-bottom: 20vw;
+      position: relative;
+    }
+
+    .section-bubble:after,
+    .section-bubble_type-b:after,
+    .section-bubble_type-a:after,
+    .section-bubble4:after,
+    .section-bubble3:after,
+    .section-bubble2:after,
+    .section-bubble1:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 20vw;
+      background: url("") green;
+      background-size: 100%;
+      transform: translate(0, 100%);
+    }
+
+    .section-bubble1 {
+      background-color: #ffffff;
+    }
+
+    .section-bubble1:after {
+      background-color: #FFD2B0;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
+    }
+
+    .section-bubble2 {
+      background-color: #FFD2B0;
+    }
+
+    .section-bubble2:after {
+      background-color: #384364;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='%23FFD2B0'/></svg>");
+    }
+
+    .section-bubble3 {
+      background-color: #384364;
+    }
+
+    .section-bubble3:after {
+      background-color: #cccccc;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23384364' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
+    }
+
+    .section-bubble3 h1 {
+      color: white;
+    }
+
+    .section-bubble3 p {
+      color: white;
+      opacity: 0.8;
+    }
+
+    .section-bubble4 {
+      background-color: #cccccc;
+    }
+
+    .section-bubble4:after {
+      background-color: #333333;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='%23cccccc'/></svg>");
+    }
+
+    .section-bubble5 {
+      background: #333333;
+      color: white;
+      text-align: center;
+    }
+
+    .section-bubble_type-a:after {
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
+    }
+
+    .section-bubble_type-b:after {
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='red'/></svg>");
+    }
+
+    .bg-light {
+      background-color: #0e508a !important;
+    }
+
+    .white, .white a {
+      color: #fff;
+    }
+
+
+  </style>
+
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+
+
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
+
+</head>
+
+<body translate="no">
+
+  <!-- Image and text -->
+  <nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <h5 class="white">
+        Apps &#8801;z
+      </h5>
+    </a>
+    <ul class="navbar-nav ml-auto" id="horizontal-list">
+      <li class="nav-item">
+        <div class="row">
+          <div class="col-6">
+            <a class="nav-link" href="tel:+91-9542656045">
+              <button class="btn btn-sm" style="background-color:transparent;">
+                <i class="fa fa-phone white"></i>
+              </button>
+            </a>
+          </div>
+          <div class="col-6">
+
+            <a class="nav-link" href="mailto:appsez18@gmail.com">
+              <button class="btn btn-sm" style="background-color:transparent;">
+                <i class="fa fa-envelope white"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+
+
+      </li>
+
+    </ul>
+  </nav>
+  <section class="py-5 section-bubble1">
+    <div class="container" style="margin-top: 32px;">
+      <p>
+        We are <b>highly experienced</b> software developers expertise in wide range of technologies driven by experts handling <b>medium to enterprise</b> applications.
+        We provide <b>high quality</b>, <b>time bound</b>, <b>cost effective</b> freelancing in application development and follow <b>workflows</b> that any typical software development company do.
+      </p>
+    </div>
+  </section>
+  <section class="py-5 section-bubble2">
+    <div class="container">
+      <h1>
+        Cloud Native
+      </h1>
+      <p>
+        With hands on experience in different cloud platofrms <b>AWS</b>, <b>Azure</b> and <b>PCF</b>, we will fullfill
+        all your cloud native application development requirements.
+      </p>
+    </div>
+  </section>
+  <section class="py-5 section-bubble3">
+    <div class="container">
+      <h1>
+        Mobile Apps
+      </h1>
+      <p>
+        Provide services on <b>Andriod</b>, <b>IOS</b> platform and as well as <b>Hybrid</b> mobile applications.
+      </p>
+    </div>
+  </section>
+  <section class="py-5 section-bubble4">
+    <div class="container">
+      <h1>
+        Expertise
+      </h1>
+      <p>
+        Android, IOS, Angular, ReactJS, Spring, Spring Boot, Spring Cloud, Kafka, RabbitMQ, MongoDB, Oracle, SQL Server,
+        MySQL, Agile methodlogies, AWS, Azure, PCF, GraphQL, Microservices, Material Design.
+      </p>
+    </div>
+  </section>
+  <section class="py-5 section-bubble5">
+    <div class="container">
+      <h1>
+        Contact Us
+      </h1>
+      <p>
+        We are just a call away. Our main strength is Trust and we provide prototypes within weeks.</br>
+        Call: <a href="tel:+91-9542656045" class="btn btn-link">&nbsp;+91-95426 56045</a></br>
+        Email:<a href="mailto:appsez18@gmail.com" class="btn btn-link">&nbsp;APPSEZ18@gmail.com</a></br>
+
+      </p>
+      <br><br><br><br>
+    </div>
+  </section>
+</body>
+
+</html>
